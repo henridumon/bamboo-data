@@ -23,7 +23,7 @@ WITH
     DISTINCT user_pseudo_id,
     1 AS paying_user_flag
   FROM
-    `bamboodata-project.analytics_220006363.events_` /* INSERT NAME OF YOUR EVENTS TABLE HERE */
+   {{ref('events')}} /* INSERT NAME OF YOUR EVENTS TABLE HERE */
   WHERE
     event_name = 'in_app_purchase'),
   by_week AS (
