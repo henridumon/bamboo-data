@@ -268,3 +268,144 @@ There are 1 unused configuration paths:
 2020-09-27 15:12:24.146063 (Thread-25): handling status request
 2020-09-27 15:12:24.147769 (Thread-25): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '27e7380c-b0a4-40fa-a943-feae0a06616b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5068cd320>]}
 2020-09-27 15:12:24.149000 (Thread-25): sending response (<Response 1464 bytes [200 OK]>) to 10.0.17.64
+2020-09-27 15:12:28.951403 (MainThread): writing 1 spans (enabled:True), 34 additional messages skipped
+2020-09-27 15:12:28.952926 (MainThread): 
+      name jinja2.compile
+        id 13868333548120498845
+  trace_id 11027988821577780477
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1601219548.950441
+       end 1601219548.9511688
+  duration 0.000728s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:7e36ebb93cc14dd8bd6614809d83e421, 34 additional messages skipped
+2020-09-27 15:12:29.051124 (Thread-26): Acquiring new bigquery connection "model.bamboodata.events".
+2020-09-27 15:12:29.051288 (Thread-26): Opening a new connection, currently in state init
+2020-09-27 15:12:29.304785 (Thread-26): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.base
+
+2020-09-27 15:12:29.456978 (AgentWriter): reported 35 traces in 0.00551s
+2020-09-27 15:12:29.457233 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-09-27 15:12:29.612208 (Thread-27): handling status request
+2020-09-27 15:12:29.612693 (Thread-27): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '27e7380c-b0a4-40fa-a943-feae0a06616b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5073da7f0>]}
+2020-09-27 15:12:29.613910 (Thread-27): sending response (<Response 1161 bytes [200 OK]>) to 10.0.47.163
+2020-09-27 15:13:29.194445 (MainThread): writing 1 spans (enabled:True), 34 additional messages skipped
+2020-09-27 15:13:29.195940 (MainThread): 
+      name jinja2.compile
+        id 12805244309187963898
+  trace_id 11362372188797991562
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1601219609.193781
+       end 1601219609.194288
+  duration 0.000507s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:7e36ebb93cc14dd8bd6614809d83e421, 34 additional messages skipped
+2020-09-27 15:13:29.267642 (Thread-28): For key bamboodata, hash mismatch (FileHash(name='sha256', checksum='30157199a8f1b2a5bf63fd4020baa498f9f981057867e4cae61592ead79f11e4') -> FileHash(name='sha256', checksum='6cdc30c4b9a9922548813ad8d29690f65ff80e9df1a08d04134d1005e60001c8')), cache invalidated
+2020-09-27 15:13:29.306876 (Thread-28): Acquiring new bigquery connection "model.bamboodata.events".
+2020-09-27 15:13:29.307049 (Thread-28): Opening a new connection, currently in state closed
+2020-09-27 15:13:29.474080 (Thread-28): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.output
+- models.base
+
+2020-09-27 15:13:29.475998 (AgentWriter): reported 36 traces in 0.00637s
+2020-09-27 15:13:29.476202 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-09-27 15:13:29.925228 (Thread-29): handling status request
+2020-09-27 15:13:29.925767 (Thread-29): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '27e7380c-b0a4-40fa-a943-feae0a06616b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa50682c668>]}
+2020-09-27 15:13:29.927009 (Thread-29): sending response (<Response 1670 bytes [200 OK]>) to 10.0.38.51
+2020-09-27 15:14:18.412675 (Thread-30): handling status request
+2020-09-27 15:14:18.414570 (Thread-30): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '27e7380c-b0a4-40fa-a943-feae0a06616b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5068e80f0>]}
+2020-09-27 15:14:18.415800 (Thread-30): sending response (<Response 1670 bytes [200 OK]>) to 10.0.27.68
+2020-09-27 15:14:18.419536 (Thread-31): handling status request
+2020-09-27 15:14:18.419880 (Thread-31): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '27e7380c-b0a4-40fa-a943-feae0a06616b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5068de7f0>]}
+2020-09-27 15:14:18.420993 (Thread-31): sending response (<Response 1670 bytes [200 OK]>) to 10.0.24.187
+2020-09-27 15:14:18.873951 (Thread-32): handling cli_args request
+2020-09-27 15:14:18.874438 (Thread-32): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '27e7380c-b0a4-40fa-a943-feae0a06616b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5068de7f0>]}
+2020-09-27 15:14:18.876852 (Thread-32): Checking header 'user-agent' tracing in whitelist set(), 44 additional messages skipped
+2020-09-27 15:14:18.898754 (Thread-32): writing 1 spans (enabled:True), 35 additional messages skipped
+2020-09-27 15:14:18.899009 (Thread-32): 
+      name requests.request
+        id 5749923555100351885
+  trace_id 11886711785028961000
+ parent_id None
+   service requests
+  resource requests.request
+      type http
+     start 1601219658.8765771
+       end 1601219658.8986242
+  duration 0.022047s
+     error 0
+      tags 
+           http.method:POST
+           http.status_code:200
+           http.url:https://fishtownanalytics.sinter-collect.com/com.snowplowanalytics.snowplow/tp2
+           runtime-id:7e36ebb93cc14dd8bd6614809d83e421, 35 additional messages skipped
+2020-09-27 15:14:18.910900 (Thread-32): Connection 'model.bamboodata.events' was properly closed.
+2020-09-27 15:14:19.495534 (AgentWriter): reported 1 traces in 0.00556s
+2020-09-27 15:14:19.496119 (AgentWriter): initialized RateSampler, sample 100% of traces, 31 additional messages skipped
+2020-09-27 15:14:19.872340 (Thread-32): sending response (<Response 137 bytes [200 OK]>) to 10.0.34.126
+2020-09-27 15:14:19.931927 (MainThread): Partial parsing not enabled
+2020-09-27 15:14:19.934047 (MainThread): Parsing macros/core.sql
+2020-09-27 15:14:19.938786 (MainThread): Parsing macros/materializations/helpers.sql
+2020-09-27 15:14:19.947183 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-09-27 15:14:19.961775 (MainThread): Parsing macros/materializations/table/table.sql
+2020-09-27 15:14:19.969343 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-09-27 15:14:19.974401 (MainThread): Parsing macros/materializations/view/view.sql
+2020-09-27 15:14:19.981073 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-09-27 15:14:20.010289 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-09-27 15:14:20.027635 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-09-27 15:14:20.029592 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-09-27 15:14:20.051732 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-09-27 15:14:20.058453 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-09-27 15:14:20.060444 (MainThread): Parsing macros/etc/query.sql
+2020-09-27 15:14:20.061707 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-09-27 15:14:20.063893 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-09-27 15:14:20.065043 (MainThread): Parsing macros/etc/datetime.sql
+2020-09-27 15:14:20.074792 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-09-27 15:14:20.076703 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-09-27 15:14:20.079177 (MainThread): Parsing macros/adapters/common.sql
+2020-09-27 15:14:20.130535 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-09-27 15:14:20.131922 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-09-27 15:14:20.133257 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-09-27 15:14:20.135359 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-09-27 15:14:20.136657 (MainThread): Parsing macros/adapters.sql
+2020-09-27 15:14:20.153954 (MainThread): Parsing macros/catalog.sql
+2020-09-27 15:14:20.160245 (MainThread): Parsing macros/etc.sql
+2020-09-27 15:14:20.161070 (MainThread): Parsing macros/materializations/incremental.sql
+2020-09-27 15:14:20.174689 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-09-27 15:14:20.176677 (MainThread): Parsing macros/materializations/seed.sql
+2020-09-27 15:14:20.179624 (MainThread): Parsing macros/materializations/table.sql
+2020-09-27 15:14:20.190085 (MainThread): Parsing macros/materializations/view.sql
+2020-09-27 15:14:20.195527 (MainThread): Partial parsing not enabled
+2020-09-27 15:14:20.241250 (MainThread): Acquiring new bigquery connection "model.bamboodata.events".
+2020-09-27 15:14:20.241378 (MainThread): Opening a new connection, currently in state init
+2020-09-27 15:14:20.308479 (Thread-33): handling poll request
+2020-09-27 15:14:20.309118 (Thread-33): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '27e7380c-b0a4-40fa-a943-feae0a06616b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5073814e0>]}
+2020-09-27 15:14:20.313986 (Thread-33): sending response (<Response 9907 bytes [200 OK]>) to 10.0.12.102
+2020-09-27 15:14:20.426405 (MainThread): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.output
+- models.base
+
+2020-09-27 15:14:20.445775 (MainThread): Found 1 model, 0 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources
+2020-09-27 15:14:20.446380 (MainThread): WARNING: Nothing to do. Try checking your model configs and model specification args
+2020-09-27 15:14:21.759574 (Thread-34): handling poll request
+2020-09-27 15:14:21.760082 (Thread-34): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '27e7380c-b0a4-40fa-a943-feae0a06616b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5075a9470>]}
+2020-09-27 15:14:21.761564 (Thread-34): sending response (<Response 1472 bytes [200 OK]>) to 10.0.38.51
+2020-09-27 15:14:22.513174 (Thread-35): handling status request
+2020-09-27 15:14:22.513661 (Thread-35): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '27e7380c-b0a4-40fa-a943-feae0a06616b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5075a9320>]}
+2020-09-27 15:14:22.515024 (Thread-35): sending response (<Response 1670 bytes [200 OK]>) to 10.0.2.56
+2020-09-27 15:17:27.963188 (Thread-36): handling status request
+2020-09-27 15:17:27.964806 (Thread-36): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '27e7380c-b0a4-40fa-a943-feae0a06616b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5075a9320>]}
+2020-09-27 15:17:27.966428 (Thread-36): sending response (<Response 1670 bytes [200 OK]>) to 10.0.36.169
